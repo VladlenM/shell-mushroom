@@ -184,3 +184,9 @@ npm run dev:mini-cart        # http://localhost:5102
 3. Add new events to [`contracts/src/events.ts`](contracts/src/events.ts).
 4. Add an entry to both manifests in `portal/public/`, and to a screen in [`portal/src/screens.ts`](portal/src/screens.ts).
 5. Add `dev:<name>` to the root `package.json` and the widget to the `dev` and `start` commands.
+
+## License
+
+[MIT](LICENSE) © 2026 Vladyslav Makhno
+
+You are welcome to use, adapt and build on this code. Keep the copyright notice and the license text in any copy or substantial portion of it, and credit this repository when you reuse it in articles, talks or courses.

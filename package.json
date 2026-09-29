@@ -1,6 +1,8 @@
 {
   "name": "shell-mushroom",
   "private": true,
+  "license": "MIT",
+  "author": "Vladyslav Makhno",
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
   },

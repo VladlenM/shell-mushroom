@@ -2,6 +2,8 @@
   "name": "@shop/checkout",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
+  "author": "Vladyslav Makhno",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -2,6 +2,8 @@
   "name": "@shop/contracts",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
+  "author": "Vladyslav Makhno",
   "description": "Types shared by the portal and the widgets. No runtime code.",
   "types": "src/index.ts"
 }
