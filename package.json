@@ -1,0 +1,25 @@
+{
+  "name": "shell-mushroom",
+  "private": true,
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "concurrently -k -n portal,product-list,mini-cart,checkout \"npm:dev:portal\" \"npm:dev:product-list\" \"npm:dev:mini-cart\" \"npm:dev:checkout\"",
+    "dev:portal": "npm run dev -w @shop/portal",
+    "dev:product-list": "npm run dev -w @shop/product-list",
+    "dev:mini-cart": "npm run dev -w @shop/mini-cart",
+    "dev:checkout": "npm run dev -w @shop/checkout",
+    "build": "npm run build --workspaces --if-present",
+    "start": "npm run build && concurrently -k -n portal,product-list,mini-cart,checkout \"npm run preview -w @shop/portal\" \"npm run preview -w @shop/product-list\" \"npm run preview -w @shop/mini-cart\" \"npm run preview -w @shop/checkout\"",
+    "type:check": "npm run type:check --workspaces --if-present"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "workspaces": [
+    "contracts",
+    "portal",
+    "widgets/*"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "widgets": [
+    { "name": "product-list", "slot": "main", "version": "dev", "url": "http://localhost:5101/dev/portal/entry.ts" },
+    { "name": "mini-cart", "slot": "aside", "version": "dev", "url": "http://localhost:5102/dev/portal/entry.ts" },
+    { "name": "checkout", "slot": "main", "version": "dev", "url": "http://localhost:5103/dev/portal/entry.ts" }
+  ]
+}

@@ -1,0 +1,31 @@
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 16px;
+  border-radius: 18px;
+  background: var(--shop-tint, #f6f5f1);
+  text-align: center;
+}
+
+.check {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--shop-accent, #5b4bff);
+  color: var(--shop-accent-ink, #fff);
+  font-size: 24px;
+}
+
+.heading {
+  margin: 8px 0 0;
+  font-size: 18px;
+}
+
+.text {
+  margin: 0;
+  color: var(--shop-muted, #6b7280);
+}

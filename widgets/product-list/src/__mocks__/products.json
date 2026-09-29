@@ -1,0 +1,8 @@
+[
+  { "id": "keyboard", "name": "Mechanical Keyboard", "price": 129, "emoji": "⌨️" },
+  { "id": "mouse", "name": "Wireless Mouse", "price": 59, "emoji": "🖱️" },
+  { "id": "monitor", "name": "27\" Monitor", "price": 349, "emoji": "🖥️" },
+  { "id": "dock", "name": "USB-C Dock", "price": 89, "emoji": "🔌" },
+  { "id": "lamp", "name": "Desk Lamp", "price": 45, "emoji": "💡" },
+  { "id": "webcam", "name": "HD Webcam", "price": 79, "emoji": "📷" }
+]

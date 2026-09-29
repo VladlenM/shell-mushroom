@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border: 1px solid var(--shop-line);
+  border-radius: var(--shop-radius);
+  background: var(--shop-surface);
+  box-shadow: var(--shop-shadow);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background: var(--shop-ink);
+  color: var(--shop-surface);
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.steps {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 6px 6px;
+  border-radius: 999px;
+  color: var(--shop-muted);
+  font-size: 14px;
+  font-weight: 500;
+  transition:
+    background 200ms ease,
+    color 200ms ease;
+}
+
+.step[aria-current='step'] {
+  background: var(--shop-tint);
+  color: var(--shop-ink);
+}
+
+.index {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--shop-line);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.step[aria-current='step'] .index {
+  background: var(--shop-accent);
+  color: var(--shop-accent-ink);
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--shop-muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  width: 32px;
+  height: 18px;
+  padding: 2px;
+  border-radius: 999px;
+  background: var(--shop-line);
+  transition: background 200ms ease;
+}
+
+.thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--shop-surface);
+  box-shadow: 0 1px 2px rgba(21, 23, 28, 0.2);
+  transition: transform 200ms ease;
+}
+
+.switch[aria-checked='true'] .track {
+  background: var(--shop-accent);
+}
+
+.switch[aria-checked='true'] .thumb {
+  transform: translateX(14px);
+}

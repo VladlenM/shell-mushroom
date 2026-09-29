@@ -1,0 +1,72 @@
+.slot {
+  min-width: 0;
+  animation: enter 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+  position: sticky;
+  top: 16px;
+}
+
+.frame {
+  position: relative;
+  padding: 8px;
+  border: 1.5px dashed transparent;
+  border-radius: calc(var(--shop-radius) + 8px);
+  transition: border-color 200ms ease;
+}
+
+.label {
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--shop-bg);
+  color: var(--shop-accent);
+  font:
+    500 11px ui-monospace,
+    Menlo,
+    monospace;
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+.outlined .frame {
+  border-color: color-mix(in srgb, var(--shop-accent) 45%, transparent);
+}
+
+.outlined .label {
+  opacity: 1;
+}
+
+.leaving {
+  animation: leave 240ms ease-in both;
+  pointer-events: none;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+@keyframes leave {
+  to {
+    opacity: 0;
+    transform: translateX(-24px) scale(0.96);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slot,
+  .leaving {
+    animation-duration: 1ms;
+  }
+}

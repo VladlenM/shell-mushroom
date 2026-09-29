@@ -1,0 +1,61 @@
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f1f0ec;
+  color: #15171c;
+}
+
+.standalone {
+  display: grid;
+  gap: 16px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.standalone-panel {
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: #15171c;
+  color: #d4d4d8;
+  font-size: 13px;
+}
+
+.standalone-panel h2 {
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #a1a1aa;
+}
+
+.standalone-panel button {
+  margin: 0 8px 12px 0;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.standalone-panel pre {
+  margin: 0;
+  font:
+    12px ui-monospace,
+    Menlo,
+    monospace;
+  white-space: pre-wrap;
+}
+
+.standalone-panel pre:empty::before {
+  content: 'Nothing published yet.';
+  color: #71717a;
+}

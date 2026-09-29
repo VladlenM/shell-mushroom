@@ -1,0 +1,49 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border-radius: 18px;
+  background: var(--shop-tint, #f6f5f1);
+}
+
+.heading {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--shop-muted, #6b7280);
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.amount {
+  font-variant-numeric: tabular-nums;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--shop-line, rgba(21, 23, 28, 0.08));
+}
+
+.total strong {
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}

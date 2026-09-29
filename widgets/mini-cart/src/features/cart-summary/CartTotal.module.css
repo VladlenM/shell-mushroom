@@ -1,0 +1,10 @@
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+.amount {
+  font-size: 18px;
+  font-variant-numeric: tabular-nums;
+}

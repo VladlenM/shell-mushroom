@@ -1,0 +1,7 @@
+{
+  "widgets": [
+    { "name": "product-list", "slot": "main", "version": "1.0.0", "url": "http://localhost:4101/1.0.0/index.js" },
+    { "name": "mini-cart", "slot": "aside", "version": "1.0.0", "url": "http://localhost:4102/1.0.0/index.js" },
+    { "name": "checkout", "slot": "main", "version": "1.0.0", "url": "http://localhost:4103/1.0.0/index.js" }
+  ]
+}

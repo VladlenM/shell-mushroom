@@ -1,0 +1,66 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 18px;
+  background: var(--shop-tint, #f6f5f1);
+}
+
+.visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 104px;
+  border-radius: 12px;
+  background: var(--shop-surface, #fff);
+  font-size: 44px;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--shop-accent, #5b4bff);
+  color: var(--shop-accent-ink, #fff);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.name {
+  margin: 0;
+  padding: 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px 2px;
+}
+
+.price {
+  font-variant-numeric: tabular-nums;
+  color: var(--shop-muted, #6b7280);
+}
+
+.add {
+  padding: 6px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--shop-ink, #15171c);
+  color: var(--shop-surface, #fff);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease;
+}
+
+.add:hover {
+  transform: translateY(-1px);
+}

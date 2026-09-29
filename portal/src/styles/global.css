@@ -1,0 +1,31 @@
+:root {
+  --shop-bg: #f1f0ec;
+  --shop-surface: #ffffff;
+  --shop-tint: #f6f5f1;
+  --shop-ink: #15171c;
+  --shop-muted: #6b7280;
+  --shop-line: rgba(21, 23, 28, 0.08);
+  --shop-accent: #5b4bff;
+  --shop-accent-ink: #ffffff;
+  --shop-radius: 24px;
+  --shop-shadow: 0 1px 2px rgba(21, 23, 28, 0.04), 0 12px 32px rgba(21, 23, 28, 0.04);
+
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--shop-bg);
+  color: var(--shop-ink);
+}
